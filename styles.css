@@ -60,7 +60,7 @@ body {
     text-align: center;
     font-family: 'Space Mono', 'Courier', monospace;
     position: relative;
-    
+    vertical-align: middle;
     height: 100%;
     width: 20%;
   }
