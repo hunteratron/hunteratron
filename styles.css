@@ -72,6 +72,17 @@ body {
     cursor: pointer;
   }
   
+.colors li:hover {
+  -webkit-box-shadow: 0px 0px 30px 4px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 0px 30px 4px rgba(66, 68, 90, 1);
+  box-shadow: 0px 0px 30px 4px rgba(66, 68, 90, 1);
+}
+.colors li:active {
+  -webkit-box-shadow: inset 0px 0px 33px -6px rgba(66, 68, 90, 1);
+  -moz-box-shadow: inset 0px 0px 33px -6px rgba(66, 68, 90, 1);
+  box-shadow: inset 0px 0px 33px -6px rgba(66, 68, 90, 1);
+  transition: all 0.1;
+}
   /* Color Blocks */
   #ice {
     background-color: #669bbc;
