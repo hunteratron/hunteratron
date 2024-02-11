@@ -38,10 +38,10 @@ body {
   .bodysection {
     border: 2px solid black;
     border-radius: 2px;
-    margin: 25px auto;
+    margin: 5px auto;
     height: 70vh;
     width: 95vw;
-    display: flex;
+    display: table;
     flex-direction: row;
     position: relative;
     
@@ -50,17 +50,22 @@ body {
     width: 95vw;
     margin-block-start: 0px;
     margin-block-end: 0px;
-    
+    display: table-cell;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
   }
 
 
   .colors li {
     flex-direction: column;
     display:inline-block;
+    justify-content: center;
+    vertical-align: middle;
     text-align: center;
     font-family: 'Space Mono', 'Courier', monospace;
     position: relative;
-    vertical-align: middle;
     height: 100%;
     width: 20%;
   }
@@ -85,4 +90,17 @@ body {
   #crimson {
     background-color: #780000;
     color: white;
+  }
+  .colors li:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  } 
+  .subhead {
+    padding-top: 25px;
+    margin-bottom: 5px;
+  }
+  header {
+    padding-top: 10px;
   }
