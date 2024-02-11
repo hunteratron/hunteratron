@@ -37,13 +37,14 @@ body {
   }
   .bodysection {
     border: 2px solid black;
-    border-radius: 2px;
+    border-radius: 4px;
     margin: 5px auto;
     height: 70vh;
     width: 95vw;
     display: table;
     flex-direction: row;
     position: relative;
+    overflow: scroll;
     
   }
   .colors ul {
@@ -104,3 +105,26 @@ body {
   header {
     padding-top: 10px;
   }
+  .sans {
+    font-family: "Inter", Helvetica, Arial, sans-serif;    
+  }
+  .serif {
+    font-family: 'DM Serif Display', serif;
+  }
+  .mono {
+    font-family: 'Space Mono', 'Courier', monospace;
+  }
+  .fonts {
+    display: flex;
+    padding: 40px 30px;
+  }
+  .textbox {
+    margin: 0 auto;
+    line-height: 1.4;
+    font-size: 18px;
+    text-align: center;
+  }
+.fonts.bodysection {
+    height: 35vh;
+    margin-bottom: 25px;
+}
