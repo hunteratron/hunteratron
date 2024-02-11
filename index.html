@@ -6,7 +6,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  </head>
+<script>
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text)
+.then(() => {
+  console.log(`Copied text to clipboard: ${text}`);
+  alert(`Copied text to clipboard: ${text}`);
+})
+.catch((error) => {
+  console.error(`Could not copy text: ${error}`);
+});
+}
+</script>
+</head>
   <body>
     <header>
     <h1>Web Style Guide</h1>
@@ -15,7 +27,7 @@
   <div class="colors bodysection">
     <ul>
      
-    <li id="crimson">#780000</li><li id="fire">#c1121f</li><li id="cappuccino">#fdf0d5</li><li id="selvedge">#003049</li><li id="ice">#669bbc</li>
+    <li id="crimson" onclick="copyToClipboard('#780000')">#780000</li><li id="fire" onclick="copyToClipboard('#c1121f')">#c1121f</li><li id="cappuccino" onclick="copyToClipboard('#fdf0d5')">#fdf0d5</li><li id="selvedge" onclick="copyToClipboard('#003049')">#003049</li><li id="ice" onclick="copyToClipboard('#669bbc')">#669bbc</li>
       
   </ul>
   </div>
