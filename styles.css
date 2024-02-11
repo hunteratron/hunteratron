@@ -20,13 +20,14 @@ body {
   
   .colors li {
     padding: 0px;
+    vertical-align: top;
     margin: 0px;
     display: inline-flex;
     text-align: center;
     margin: 0 auto;
     font-family: 'Space Mono', 'Courier', monospace;
     position: relative;
-    vertical-align: baseline;
+    
     height: 100%;
     width: 20%;
   }
